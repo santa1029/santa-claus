@@ -1,0 +1,383 @@
+Gener@Gener MINGW64 /d/github
+$ git init
+Initialized empty Git repository in D:/github/.git/
+
+Gener@Gener MINGW64 /d/github (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2-25(changed)/
+        2-26/
+        3-1/
+        extra/
+        kingsley_accounts BU.sql
+        send/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Gener@Gener MINGW64 /d/github (master)
+$ git add .
+
+
+Gener@Gener MINGW64 /d/github (master)
+$ git commit -m 'first commit'
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Gener@Gener.(none)')
+
+Gener@Gener MINGW64 /d/github (master)
+$ titandev787@gmail.com
+bash: titandev787@gmail.com: command not found
+
+Gener@Gener MINGW64 /d/github (master)
+$ git config --global user.eamil titandev787@gmail.com
+
+Gener@Gener MINGW64 /d/github (master)
+$ git config --global user.name romanov787
+
+Gener@Gener MINGW64 /d/github (master)
+$ git commit -m 'first commit'
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Gener@Gener.(none)')
+
+Gener@Gener MINGW64 /d/github (master)
+$ git config --global user.email 'titandev787@gamil.com'
+
+Gener@Gener MINGW64 /d/github (master)
+$ git config --global user.name 'romanov787'
+
+Gener@Gener MINGW64 /d/github (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   2-25(changed)/EomBalanceController.php
+        new file:   2-25(changed)/admin/EomBalanceController.php
+      
+
+
+Gener@Gener MINGW64 /d/github (master)
+$ git commit -m "first commit"
+[master (root-commit) aaa2d11] first commit
+ 1313 files changed, 496636 insertions(+)
+ create mode 100644 2-25(changed)/EomBalanceController.php
+ create mode 100644 2-25(changed)/admin/EomBalanceController.php
+ create mode 100644 2-25(changed)/admin/PerformanceController.php
+ create mode 100644 2-26/EomBalanceController.php
+
+Gener@Gener MINGW64 /d/github (master)
+$ git remote add origin https://github.com/romanov787/santa-claus.git
+
+Gener@Gener MINGW64 /d/github (master)
+$ git push -u origin master
+remote: Permission to romanov787/santa-claus.git denied to devconductor125.
+fatal: unable to access 'https://github.com/romanov787/santa-claus.git/': The requested URL returned error: 403
+
+Gener@Gener MINGW64 /d/github (master)
+$ ^C
+
+Gener@Gener MINGW64 /d/github (master)
+$ git remote -v
+origin  https://github.com/romanov787/santa-claus.git (fetch)
+origin  https://github.com/romanov787/santa-claus.git (push)
+
+Gener@Gener MINGW64 /d/github (master)
+$ ^C
+
+Gener@Gener MINGW64 /d/github (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Gener@Gener MINGW64 /d/github (master)
+$ git log
+commit aaa2d1106c500f47fae4225c23a0ec3f30752a01 (HEAD -> master)
+Author: romanov787 <titandev787@gamil.com>
+Date:   Fri Mar 1 21:42:53 2024 +0200
+
+    first commit
+
+Gener@Gener MINGW64 /d/github (master)
+$ git push origin master
+remote: Permission to romanov787/santa-claus.git denied to devconductor125.
+fatal: unable to access 'https://github.com/romanov787/santa-claus.git/': The requested URL returned error: 403
+
+Gener@Gener MINGW64 /d/github (master)
+$ git push origin master
+To https://github.com/romanov787/santa-claus.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/romanov787/santa-claus.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Gener@Gener MINGW64 /d/github (master)
+$ git push origin master
+To https://github.com/romanov787/santa-claus.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/romanov787/santa-claus.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Gener@Gener MINGW64 /d/github (master)
+$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), 1.94 KiB | 284.00 KiB/s, done.
+From https://github.com/romanov787/santa-claus
+ * [new branch]      master     -> origin/master
+
+Gener@Gener MINGW64 /d/github (master)
+$ git push origin master
+To https://github.com/romanov787/santa-claus.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/romanov787/santa-claus.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Gener@Gener MINGW64 /d/github (master)
+$ git merge master
+Already up to date.
+
+Gener@Gener MINGW64 /d/github (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Gener@Gener MINGW64 /d/github (master)
+$ git loig
+git: 'loig' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+Gener@Gener MINGW64 /d/github (master)
+$ git log
+commit aaa2d1106c500f47fae4225c23a0ec3f30752a01 (HEAD -> master)
+Author: romanov787 <titandev787@gamil.com>
+Date:   Fri Mar 1 21:42:53 2024 +0200
+
+    first commit
+
+Gener@Gener MINGW64 /d/github (master)
+$ git branch -M main
+
+Gener@Gener MINGW64 /d/github (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Gener@Gener MINGW64 /d/github (main)
+$ git push origin main
+Enumerating objects: 694, done.
+Counting objects: 100% (694/694), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (687/687), done.
+Writing objects: 100% (694/694), 16.02 MiB | 407.00 KiB/s, done.
+Total 694 (delta 249), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (249/249), done.
+remote:
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/romanov787/santa-claus/pull/new/main
+remote:
+To https://github.com/romanov787/santa-claus.git
+ * [new branch]      main -> main
+
+Gener@Gener MINGW64 /d/github (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Gener@Gener MINGW64 /d/github (main)
+$ git branch --delete master
+error: branch 'master' not found
+
+Gener@Gener MINGW64 /d/github (main)
+$ git fetch
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 967 bytes | 241.00 KiB/s, done.
+From https://github.com/romanov787/santa-claus
+   aaa2d11..5025885  main       -> origin/main
+
+Gener@Gener MINGW64 /d/github (main)
+$ git branch --delete master
+error: branch 'master' not found
+
+Gener@Gener MINGW64 /d/github (main)
+$ git checkout master
+Switched to a new branch 'master'
+branch 'master' set up to track 'origin/master'.
+
+Gener@Gener MINGW64 /d/github (master)
+$ git tech
+git: 'tech' is not a git command. See 'git --help'.
+
+The most similar command is
+        fetch
+
+Gener@Gener MINGW64 /d/github (master)
+$ git fetch
+git pull
+Gener@Gener MINGW64 /d/github (master)
+$ git pull
+Already up to date.
+
+Gener@Gener MINGW64 /d/github (master)
+$ git branch -a
+  main
+* master
+  remotes/origin/main
+  remotes/origin/master
+
+Gener@Gener MINGW64 /d/github (master)
+$ git branch --delete master
+error: cannot delete branch 'master' used by worktree at 'D:/github'
+
+Gener@Gener MINGW64 /d/github (master)
+$ git checkout main
+Switched to branch 'main'
+
+Gener@Gener MINGW64 /d/github (main)
+$ git branch --delete master
+warning: deleting branch 'master' that has been merged to
+         'refs/remotes/origin/master', but not yet merged to HEAD
+Deleted branch master (was 504737b).
+
+Gener@Gener MINGW64 /d/github (main)
+$ git push origin
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Gener@Gener MINGW64 /d/github (main)
+$ git push origin main
+gTo https://github.com/romanov787/santa-claus.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/romanov787/santa-claus.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Gener@Gener MINGW64 /d/github (main)
+$ git push origin --delete master
+To https://github.com/romanov787/santa-claus.git
+ ! [remote rejected] master (refusing to delete the current branch: refs/heads/master)
+error: failed to push some refs to 'https://github.com/romanov787/santa-claus.git'
+
+Gener@Gener MINGW64 /d/github (main)
+$ git branch -a
+* main
+  remotes/origin/main
+  remotes/origin/master
+
+Gener@Gener MINGW64 /d/github (main)
+$ git fetch
+
+Gener@Gener MINGW64 /d/github (main)
+$ git checkout master
+Switched to a new branch 'master'
+branch 'master' set up to track 'origin/master'.
+
+Gener@Gener MINGW64 /d/github (master)
+$ ls
+LICENSE  README.md
+
+Gener@Gener MINGW64 /d/github (master)
+$ git push origin -d master
+To https://github.com/romanov787/santa-claus.git
+ ! [remote rejected] master (refusing to delete the current branch: refs/heads/master)
+error: failed to push some refs to 'https://github.com/romanov787/santa-claus.git'
+
+Gener@Gener MINGW64 /d/github (master)
+$ git branch -a
+  main
+* master
+  remotes/origin/main
+  remotes/origin/master
+
+Gener@Gener MINGW64 /d/github (master)
+$ git push origin -d master
+To https://github.com/romanov787/santa-claus.git
+ - [deleted]         master
+
+Gener@Gener MINGW64 /d/github (master)
+$ git branch -d master
+error: cannot delete branch 'master' used by worktree at 'D:/github'
+
+Gener@Gener MINGW64 /d/github (master)
+$ git branch --delete master
+error: cannot delete branch 'master' used by worktree at 'D:/github'
+
+Gener@Gener MINGW64 /d/github (master)
+$ git checkout main
+Switched to branch 'main'
+
+Gener@Gener MINGW64 /d/github (main)
+$ git branch --delete master
+error: the branch 'master' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D master'
+
+Gener@Gener MINGW64 /d/github (main)
+$ git branch -D master
+Deleted branch master (was 504737b).
+
+Gener@Gener MINGW64 /d/github (main)
+$ git push origin -d branch-namegit push origin -d branch-namegit push origin -d branch-name^C
+
+Gener@Gener MINGW64 /d/github (main)
+$ ^C
+
+Gener@Gener MINGW64 /d/github (main)
+$ ^C
+
+Gener@Gener MINGW64 /d/github (main)
+$ ^C
+
+Gener@Gener MINGW64 /d/github (main)
+$
