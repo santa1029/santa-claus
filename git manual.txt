@@ -1,3 +1,6 @@
+-------------------------------git manual-----------------------------------
+
+
 Gener@Gener MINGW64 /d/github
 $ git init
 Initialized empty Git repository in D:/github/.git/
